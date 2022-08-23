@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">RashidRachel Hotel Survey Form</h1>
+        <form id="survey-form" action="Submit">
+            <p id="description">Thank You For Using RashidRachel Hotel! Please Let Us Know How We Can Improve Our
+                Services Down Below: 
+                </p>
+
+            <div class="row">
+                <div class="left">
+                    <label id="name-label" for="name">Name:</label>
+                </div>
+                <div class="Right">
+                    <input autofocus type="text" id="name" placeholder="Enter Your Name" required>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="left"> <label id="email-label" for="email">Email:</label>
+                </div>
+                <div class="Right">
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="row">
+                    <div class="left">
+                        <label id="number-label">Age:</label>
+                    </div>
+                    <div class="Right">
+                        <input type="number" id="number" min="18" max="50" placeholder="Enter Your Age" required>
+                    </div>
+                    <div class="row">
+                        <label>Which Option Best Describes Your Current Role?</label>
+                    </div>
+                    <div class="center">
+                        <select id="dropdown">
+                            <option disabled selected value>Select Current Role</option>
+                            <option value="student">Student</option>
+                            <option value="fulltimejob">Full Time Job</option>
+                            <option value="fulltimelearner">Full Time Learner</option>
+                            <option value="prefernottosay">Prefer Not To Say</option>
+                            <option value="other">Other</option>
+                        </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="left">
+                            <label> Would You Recommend RashidRachel Hotel To A Friend?</label>
+                        </div>
+                        <div class="Right">
+                            <input type="radio" name="radio" value="definitely">Definitely<br>
+                            <input type="radio" name="radio" value="maybe">Maybe<br>
+                            <input type="radio" name="radio" value="notsure">Not Sure<br>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                                <label>What Is Your Favorite Feature Of RashidRachel Hotel?</label>
+                            </div>
+                            <div class="Right">
+                                <select>
+                                    <option disabled selected value>Select An Option</option>
+                            <option value="roomservice">Room Service</option>
+                            <option value="swimmingpool">Swimming Pool</option>
+                            <option value="food">Food</option>
+                            <option value="location">Location</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="left">
+                             <label> What Would You Like To See Improved? (check all that apply):</label>
+                            </div>
+                            <div class="Right">
+                                <input type="checkbox" value="Food">Food<br>
+                                <input type="checkbox" value="Roomsercices">Room Service<br>
+                                <input type="checkbox" value="Swimmingpool">Swimming Pool<br>
+                                <input type="checkbox" value="Customerservice">Customer Service<br>
+                                <input type="checkbox" value="Delivery">Delivery <br>
+                                <input type="checkbox" value="Entertainment">Entertainment<br>
+                                <input type="checkbox" value="Playground">Playground<br>
+                                <input type="checkbox" value="Music">Music<br>
+                                <input type="checkbox" value="Goodmanagement">Good Management  <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="Left">
+                                <label>Any Comments or Suggestions?</label><br>
+                            </div>
+                            <div class="Right">
+                                <textarea id="comments" rows="10" cols="50" name="comment" placeholder="Enter Your Comment Here..."></textarea><br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button class="button" id="submit" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</body>
+</html>
